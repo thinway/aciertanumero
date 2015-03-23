@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/numberEditText"
+        android:hint="Introducir Número"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <Button
+            android:id="@+id/testNumberButton"
+            android:text="Comprobar"
+            android:layout_marginRight="5dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#4B88EA"
+            android:onClick="comprobarNumero"/>
+
+        
+        <Button
+            android:id="@+id/newNumberButton"
+            android:text="Nueva Partida"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F73D40"
+            android:onClick="nuevaPartida"
+            android:nestedScrollingEnabled="true"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empezar a jugar" />
+
+</LinearLayout>
